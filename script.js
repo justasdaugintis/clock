@@ -201,8 +201,10 @@ function setDate() {
     const now = new Date();
     const seconds = now.getSeconds();
     const secondsDegrees = ((seconds / 60) * 360) + 90;
-var secondDom = document.querySeletor(.hand-second).style.transform=('rotate $secondDegrees degree')
-    //how do you make the seconds hand move
+ document.querySeletor(".hand-second").style.transform= `rotate(${secondDegrees}deg)`
+console.log(secondsDegrees)    
+
+//how do you make the seconds hand move
     
     //hour equation
     //minute equation
