@@ -32,12 +32,19 @@
   }
 
   .hour-hand {
+    position: absolute;
     height: 7px;
-    width: 50%;
+    width: 30%;
+    left: 20%;
   
   }
 
   .minute-hand {
+    width:50%;
+    height:5px;
+  }
+
+  .second-hand {
     width:50%;
     height:1px;
   }
