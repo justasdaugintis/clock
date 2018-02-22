@@ -208,7 +208,15 @@ function setDate() {
 //how do you make the seconds hand move
     
     //hour equation
-    //minute equation
+    const hours = now.getHours();
+    const hoursDegrees = ((hours / 12) * 360) + 90;
+ document.querySelector(".hour-hand").style.transform=`rotate(${hoursDegrees}deg)`
+    
+ 
+ //minute equation
+    const minutes = now.getMinutes();
+    const minutesDegrees = ((minutes / 60) * 360) + 90;
+ document.querySelector(".minute-hand").style.transform=`rotate(${minutesDegrees}deg)`
 }
 //pass setDate and we are going to run it every 1 second
   setInterval(setDate, 1000);
