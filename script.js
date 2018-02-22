@@ -201,8 +201,8 @@ function setDate() {
     const now = new Date();
     const seconds = now.getSeconds();
     const secondsDegrees = ((seconds / 60) * 360) + 90;
- document.querySeletor(".second-hand").style.transform= `rotate(${secondDegrees}deg)`
-var secondDom = document.querySeletor(".second-hand")
+ document.querySelector(".second-hand").style.transform=`rotate(${secondsDegrees}deg)`
+
  console.log(secondsDegrees)    
 
 //how do you make the seconds hand move
@@ -215,4 +215,3 @@ var secondDom = document.querySeletor(".second-hand")
   setDate();
 
 
-Add CommentCollapse 
